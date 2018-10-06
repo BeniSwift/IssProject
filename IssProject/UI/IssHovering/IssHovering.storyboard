@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mL8-d8-vAh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hover-->
+        <scene sceneID="Etw-Bk-WjQ">
+            <objects>
+                <viewController id="mL8-d8-vAh" customClass="IssHoveringViewController" customModule="IssProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Po-Yf-xPp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VUX-14-mve">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="STZ-dM-G2Q" firstAttribute="trailing" secondItem="VUX-14-mve" secondAttribute="trailing" id="G2f-9s-y05"/>
+                            <constraint firstItem="STZ-dM-G2Q" firstAttribute="bottom" secondItem="VUX-14-mve" secondAttribute="bottom" id="W35-Qt-Cbf"/>
+                            <constraint firstItem="VUX-14-mve" firstAttribute="top" secondItem="STZ-dM-G2Q" secondAttribute="top" id="ft9-HF-4lf"/>
+                            <constraint firstItem="VUX-14-mve" firstAttribute="leading" secondItem="STZ-dM-G2Q" secondAttribute="leading" id="sSq-Kg-gRW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="STZ-dM-G2Q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hover" id="t9Z-JU-AHZ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-12"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="mapView" destination="VUX-14-mve" id="d0K-uR-cqt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73m-aY-XUr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="896"/>
+        </scene>
+    </scenes>
+</document>
