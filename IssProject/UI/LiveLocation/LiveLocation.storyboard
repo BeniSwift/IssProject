@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BZ1-0O-gYg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live Location-->
+        <scene sceneID="DN0-w3-qCl">
+            <objects>
+                <viewController id="BZ1-0O-gYg" customClass="LiveLocationViewController" customModule="TestAvito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u5L-kU-nfj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="l2D-z7-JMd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l2D-z7-JMd" firstAttribute="leading" secondItem="75W-ch-ajY" secondAttribute="leading" id="Yz4-xV-BbP"/>
+                            <constraint firstItem="75W-ch-ajY" firstAttribute="trailing" secondItem="l2D-z7-JMd" secondAttribute="trailing" id="flu-0a-4lH"/>
+                            <constraint firstItem="75W-ch-ajY" firstAttribute="bottom" secondItem="l2D-z7-JMd" secondAttribute="bottom" id="n6S-Ra-tYN"/>
+                            <constraint firstItem="l2D-z7-JMd" firstAttribute="top" secondItem="75W-ch-ajY" secondAttribute="top" id="sBR-d2-e9p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="75W-ch-ajY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Live Location" id="bNx-SW-HLj">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-12"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="mapView" destination="l2D-z7-JMd" id="qqh-Eu-LaR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucu-Tk-qAL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
